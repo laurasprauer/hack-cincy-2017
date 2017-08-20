@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Saira+Condensed:600');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  text-align: center;
+  background-color:#F4A100;
+}
+
+h1{
+  font-family:'Saira Condensed', sans-serif;
+  font-size:50px;
+  color:#fff;
+  margin-bottom:20px;
+}
+
+.header{
+  height:70px;
+  width:100%;
+  background-color:#fff;
+}
+
+.header-wrapper{
+  width:100%;
+  height:70px;
+  padding:0px 60px;
+  box-sizing: border-box;
+  max-width:1120px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  text-align:left;
+  height:70px;
+  width: 275px;
+  position: relative;
+}
+
+.logo p {
+  font-family:'Saira Condensed', sans-serif;
+  color:#313131;
+  font-size:34px;
+  padding:0;
+  margin:0;
+  position: absolute;
+  top: 8px;
+  left: 65px;
+}
+
+.tabs{
+  display:flex;
+  align-items:center;
+}
+
+.yellow{
+  background-color: #F9E773 !important;
+}
+
+.tabs a {
+  /*font-family: 'Lato', sans-serif;*/
+  font-family:'Saira Condensed', sans-serif;
+  color: #313131;
+  font-size: 22px;
+  background-color: #fff;
+  padding: 17px;
+  max-height:70px;
+  text-decoration: none;
+}
+
+.tabs a:hover{
+  color: #fff;
+  background-color: #313131 !important;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding:60px;
+  box-sizing: border-box;
+}
+
+.meter-container{
+  width:390px;
+  height:194px;
+  margin:0 auto;
+  position:relative;
+}
+
+/*@keyframes arrowAnimate {
+  0%   { transform: rotate(-90deg); }
+  50% { transform: rotate(90deg); }
+  100% { transform: rotate(-90deg); }
+}*/
+
+.arrow{
+  /*transform: rotate(40deg); this value goes from -90deg to 90deg */
+  transform-origin: 12px 88px;
+  position:absolute;
+  top: 94px;
+  left: 183px;
+  /*animation: arrowAnimate 5s infinite;*/
+  transform: rotate(14.4deg);
+}
+
+.wrapper ul {
+  list-style-type: none;
+  margin-top: 35px;
+}
+
+.wrapper ul li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom:4px solid #313131;
+  margin-bottom: 5px;
+}
+
+.cat{
+  font-family:'Saira Condensed', sans-serif;
+  color: #313131;
+  font-size: 20px;
+}
+
+.num{
+  font-family:'Lato', sans-serif;
+  color: #313131;
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+}
+
+.imageData{
+  display: flex;
+  flex-wrap: wrap;
+  width:calc(100vw - 120px);
+  justify-content: center;
+}
+
+.col{
+  width:33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+img{
+  width:100%;
+}
+
+.col > p{
+  font-family:'Lato', sans-serif;
+  color: #313131;
+  font-size: 14px;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+@media screen and (max-width: 690px){
+  .logo{
+    display:none;
+  }
+  .header-wrapper{
+    justify-content: center;
+  }
+}
